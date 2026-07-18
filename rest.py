@@ -1,32 +1,91 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Restaurant Recommendation", page_icon="🍽️")
+# ----------------------------
+# Page Configuration
+# ----------------------------
+st.set_page_config(
+    page_title="Restaurant Recommendation System",
+    page_icon="🍽️",
+    layout="wide"
+)
 
 st.title("🍽️ Restaurant Recommendation System")
+st.write("Find the best restaurants based on your preferences.")
 
-# Load dataset
+# ----------------------------
+# Load Dataset
+# ----------------------------
 df = pd.read_csv("restaurants.csv")
 
+# ----------------------------
 # User Inputs
-city = st.selectbox("Select City", sorted(df["City"].unique()))
-cuisine = st.selectbox("Select Cuisine", sorted(df["Cuisine"].unique()))
-budget = st.slider("Maximum Budget (₹)", 100, 2000, 500)
-rating = st.slider("Minimum Rating", 1.0, 5.0, 4.0)
+# ----------------------------
+city = st.selectbox(
+    "Select City",
+    ["All"] + sorted(df["City"].unique().tolist())
+)
 
-if st.button("Recommend Restaurants"):
+cuisine = st.selectbox(
+    "Select Cuisine",
+    ["All"] + sorted(df["Cuisine"].unique().tolist())
+)
 
-    result = df[
-        (df["City"] == city) &
-        (df["Cuisine"] == cuisine) &
-        (df["Budget"] <= budget) &
-        (df["Rating"] >= rating)
-    ]
+budget = st.slider(
+    "Maximum Budget (₹)",
+    min_value=int(df["Budget"].min()),
+    max_value=int(df["Budget"].max()),
+    value=int(df["Budget"].max())
+)
 
-    if len(result) > 0:
-        st.success("Recommended Restaurants")
+rating = st.slider(
+    "Minimum Rating",
+    min_value=float(df["Rating"].min()),
+    max_value=float(df["Rating"].max()),
+    value=float(df["Rating"].min()),
+    step=0.1
+)
 
-        st.dataframe(result)
+# ----------------------------
+# Recommendation Button
+# ----------------------------
+if st.button("🍴 Recommend Restaurants"):
+
+    result = df.copy()
+
+    # Filter by City
+    if city != "All":
+        result = result[result["City"] == city]
+
+    # Filter by Cuisine
+    if cuisine != "All":
+        result = result[result["Cuisine"] == cuisine]
+
+    # Filter by Budget
+    result = result[result["Budget"] <= budget]
+
+    # Filter by Rating
+    result = result[result["Rating"] >= rating]
+
+    # Display Results
+    if not result.empty:
+
+        result = result.sort_values(
+            by=["Rating", "Budget"],
+            ascending=[False, True]
+        )
+
+        st.success(f"✅ {len(result)} Restaurant(s) Found")
+
+        st.dataframe(result, use_container_width=True)
 
     else:
-        st.error("No restaurants found. Try changing your filters.")
+        st.warning("No restaurants found for the selected filters.")
+
+# ----------------------------
+# Show Complete Dataset
+# ----------------------------
+st.markdown("---")
+
+if st.checkbox("📋 Show All Restaurants"):
+    st.dataframe(df, use_container_width=True)

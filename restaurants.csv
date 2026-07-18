@@ -1,16 +1,102 @@
 Restaurant,Cuisine,City,Budget,Rating
 Paradise,Indian,Hyderabad,800,4.8
-Spice Hub,Indian,Hyderabad,500,4.5
 Bawarchi,Indian,Hyderabad,700,4.7
-Shah Ghouse,Indian,Hyderabad,600,4.6
-Mehfil,Indian,Hyderabad,650,4.5
-Domino's,Italian,Guntur,600,4.2
+Shah Ghouse,Indian,Hyderabad,650,4.6
+Mehfil,Indian,Hyderabad,600,4.5
+Pista House,Indian,Hyderabad,750,4.7
+Spice Hub,Indian,Guntur,500,4.4
+Sri Kanya,Indian,Vijayawada,550,4.5
+Hotel Swagruha,Indian,Guntur,350,4.3
+Minerva Grand,Indian,Vijayawada,650,4.6
+A2B,Indian,Bangalore,500,4.5
+Saravana Bhavan,South Indian,Chennai,600,4.9
+Murugan Idli Shop,South Indian,Chennai,450,4.8
+Dakshin,South Indian,Hyderabad,900,4.7
+Hotel Daspalla,South Indian,Vijayawada,500,4.5
+Ulavacharu,South Indian,Vijayawada,700,4.6
+Ramesh Dosa House,South Indian,Bangalore,400,4.4
 Pizza Hut,Italian,Guntur,700,4.4
+Domino's,Italian,Guntur,600,4.2
+La Pino'z Pizza,Italian,Vijayawada,750,4.3
+Little Italy,Italian,Bangalore,1200,4.7
+Cafe Milano,Italian,Hyderabad,900,4.5
+Olive Bistro,Italian,Hyderabad,1500,4.8
+Toscano,Italian,Bangalore,1300,4.7
+The Pizza Bakery,Italian,Bangalore,900,4.6
+Mainland China,Chinese,Hyderabad,1100,4.7
+Chinese Wok,Chinese,Guntur,500,4.2
+Beijing Bites,Chinese,Bangalore,850,4.5
+Wok Express,Chinese,Vijayawada,650,4.3
+Kim Ling,Chinese,Chennai,700,4.4
+Shanghai Chef,Chinese,Hyderabad,950,4.6
 KFC,Fast Food,Guntur,500,4.1
 Burger King,Fast Food,Vijayawada,450,4.2
+McDonald's,Fast Food,Hyderabad,550,4.3
+Subway,Fast Food,Bangalore,600,4.4
+Wow Momo,Fast Food,Hyderabad,400,4.3
+Taco Bell,Fast Food,Chennai,650,4.4
+Five Star Burger,Fast Food,Guntur,350,4.1
 Cafe Coffee Day,Cafe,Guntur,300,4.3
 Starbucks,Cafe,Hyderabad,800,4.8
-BBQ Nation,Chinese,Bangalore,1000,4.6
-Mainland China,Chinese,Hyderabad,1100,4.7
-Saravana Bhavan,South Indian,Chennai,600,4.8
-McDonald's,Fast Food,Hyderabad,550,4.3
+Barista,Cafe,Bangalore,700,4.5
+Third Wave Coffee,Cafe,Bangalore,750,4.7
+Aromas Cafe,Cafe,Vijayawada,450,4.2
+Coffee Day Lounge,Cafe,Hyderabad,600,4.4
+Brew Room,Cafe,Chennai,650,4.6
+Absolute Barbecues,BBQ,Hyderabad,1200,4.8
+Barbeque Nation,BBQ,Vijayawada,1000,4.6
+AB's,BBQ,Bangalore,1100,4.7
+Smoky Grill,BBQ,Guntur,850,4.4
+Grill House,BBQ,Chennai,950,4.5
+The Fisherman's Wharf,Seafood,Bangalore,1400,4.8
+Sea Spice,Seafood,Visakhapatnam,1000,4.6
+Ocean Pearl,Seafood,Visakhapatnam,1200,4.7
+Blue Sea,Seafood,Chennai,900,4.5
+Coastal Kitchen,Seafood,Hyderabad,1100,4.6
+Cream Stone,Desserts,Hyderabad,400,4.6
+Ibaco,Desserts,Vijayawada,350,4.5
+Baskin Robbins,Desserts,Guntur,300,4.4
+Frozen Bottle,Desserts,Bangalore,450,4.5
+NIC Ice Cream,Desserts,Hyderabad,500,4.6
+Belgian Waffle,Desserts,Chennai,450,4.4
+Sweet Magic,Desserts,Vijayawada,350,4.3
+Ohri's,Continental,Hyderabad,1300,4.6
+Sizzling Joe,Continental,Hyderabad,900,4.5
+The Square,Continental,Bangalore,1500,4.8
+Urban Kitchen,Continental,Chennai,1100,4.6
+The Glass House,Continental,Hyderabad,1400,4.7
+Mughal Darbar,Mughlai,Hyderabad,900,4.7
+Al Taza,Mughlai,Bangalore,950,4.5
+Lucky Restaurant,Mughlai,Hyderabad,700,4.4
+Royal Biryani,Mughlai,Guntur,600,4.3
+Delhi Darbar,Mughlai,Chennai,850,4.6
+Tandoori Nights,North Indian,Bangalore,1000,4.6
+Punjab Grill,North Indian,Hyderabad,1200,4.8
+Pind Balluchi,North Indian,Chennai,950,4.5
+Dhaba Express,North Indian,Guntur,550,4.2
+Amritsar Haveli,North Indian,Vijayawada,700,4.4
+Sushi World,Japanese,Hyderabad,1400,4.7
+Tokyo Bowl,Japanese,Bangalore,1500,4.8
+Sakura,Japanese,Chennai,1300,4.6
+Wasabi,Japanese,Hyderabad,1600,4.9
+Ramen House,Japanese,Vijayawada,1100,4.5
+Mexican Grill,Mexican,Hyderabad,900,4.5
+Taco Fiesta,Mexican,Bangalore,1000,4.6
+Burrito Bros,Mexican,Chennai,850,4.4
+Nacho King,Mexican,Guntur,700,4.2
+Casa Mexicana,Mexican,Vijayawada,900,4.5
+Arabian Nights,Arabian,Hyderabad,800,4.6
+Mandi House,Arabian,Guntur,700,4.5
+Yemeni Kitchen,Arabian,Bangalore,900,4.7
+Al Baik,Arabian,Chennai,750,4.5
+Mandi Magic,Arabian,Vijayawada,850,4.6
+Food Palace,Indian,Tirupati,500,4.4
+Hotel Mayura,South Indian,Tirupati,450,4.5
+Spicy Bowl,Chinese,Tirupati,600,4.3
+Coffee Corner,Cafe,Tirupati,350,4.2
+Pizza Corner,Italian,Tirupati,700,4.4
+Burger Point,Fast Food,Tirupati,450,4.1
+BBQ Village,BBQ,Tirupati,950,4.6
+Dessert Hub,Desserts,Tirupati,300,4.3
+Ocean View,Seafood,Tirupati,900,4.5
+Royal Feast,North Indian,Tirupati,800,4.4
